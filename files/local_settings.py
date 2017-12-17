@@ -13,3 +13,5 @@ ACCOUNT_EMAIL_VERIFICATION = 'none'
 
 # Enable private Git doc repositories
 ALLOW_PRIVATE_REPOS = True
+
+AUTHENTICATION_BACKENDS = ('django.contrib.auth.backends.ModelBackend', 'guardian.backends.ObjectPermissionBackend')
